@@ -1,0 +1,27 @@
+!!!!    2    0    1 1391819296   0000                                         
+! IPG: rev 08.30p  Sat Feb 08 08:28:17 2014
+! Common Lead Resistance 500m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+disconnect all
+connect i to "#%GND"
+connect s to "#%3D3V_S0"
+connect g to "#%AUD_AGND" ! 28219 ! IPG recommended
+connect g to "#%GND" !2585 ! IPG recommended
+!gg! connect g to "#%27MHZ_IN" ! 2000000000
+!gg! connect g to "#%27MHZ_OUT" ! 2000000000
+!gg! connect g to "#%27MHZ_OUT_R" ! 2000000000
+!gg! connect g to "#%AMBER_LED_BAT" ! 2000000000
+!gg! connect g to "#%AUD_SPK_L+" ! 2000000000
+!gg! connect g to "#%AUD_SPK_L-" ! 2000000000
+!gg! connect g to "#%AUD_SPK_R+" ! 2000000000
+!gg! connect g to "#%AUD_SPK_R-" ! 2000000000
+!gg! connect g to "#%BATT_WHITE_LED#" ! 2000000000
+!gg! connect g to "#%BAT_AMBER" ! 2000000000
+resistor 8.8M, 105, 90.5, re6, wb, ar20.0m, ed, wa13.4m
+! "r2710" is a limited test.
+! DUT: nominal 8.8M, plus tol 10.0 %, minus tol 10.0 %
+! DUT: high 9.68M, low 7.92M
+! TEST: high limit 17.997M, low limit 839.938k
+! Tolerance Multiplier 5.00
+! Remote Sensing is Allowed
+
